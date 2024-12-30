@@ -1,6 +1,8 @@
-# 20241230 fekerr & copilot
+### 20241230 fekerr & copilot
 
-Sounds like a fun project! Here’s a quick guide to set up a Docker container to play with RTIC on an embedded Rust environment.
+NOTE: this is a work in progress and may be on hold indefinitely (20241230).
+
+Copiloted project: Here’s a quick guide to set up a Docker container to play with RTIC on an embedded Rust environment.
 
 ### **Step-by-Step Guide to Create a Docker Container for RTIC**
 
