@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
     gdb-multiarch \
     llvm \
     libclang-dev \
-    libstdc++-10-dev \
+    libstdc++-12-dev \
     binutils-arm-none-eabi \
     gcc-arm-none-eabi \
     gdb-arm-none-eabi \
@@ -27,6 +27,9 @@ RUN rustup component add llvm-tools-preview
 
 # Setup default toolchain
 RUN rustup default stable
+
+# Set USER environment variable
+ENV USER=dockeruser
 
 # Create a new RTIC project
 RUN cargo generate --git https://github.com/rtic-rs/app-template.git --name my-rtic-app
